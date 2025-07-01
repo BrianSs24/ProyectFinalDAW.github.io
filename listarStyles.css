@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5b6a81;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla {
+    width: 100%;
+    max-width: 1500px;
+    background-color: #043c85a1;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(179, 148, 148, 0.1);
+}
+
+h2 {
+    text-align: left;
+    font-size: 24px;
+    color: #19e445;
+    margin-bottom: 30px;
+    font-weight: 500;
+    border-bottom: 2px solid #181414;
+    padding-bottom: 10px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse; /* UNE las celdas entre sí */
+}
+
+/* Cabecera */
+thead tr {
+    background-color: #203753;
+    color: #6bd874;
+}
+
+thead tr th {
+    padding: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Filas */
+tbody tr {
+    background-color: #0000009d;
+    border-radius: none;
+
+    overflow: hidden;
+}
+
+/* Elimina separación visual entre celdas */
+tbody tr th {
+    padding: 16px;
+    font-weight: normal;
+    color: #2aecbc;
+    text-align: left;
+    border: none;
+}
+
+/* Bordes redondeados a la fila entera usando :first-child y :last-child */
+tbody tr th:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+tbody tr th:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Alineación uniforme */
+tbody tr th:nth-child(1),
+tbody tr th:nth-child(2),
+tbody tr th:nth-child(3),
+tbody tr th:nth-child(4) {
+    width: 20%;
+}
+
+tbody tr th:nth-child(5),
+tbody tr th:nth-child(6) {
+    width: 10%;
+    text-align: left;
+}
+
+/* Botones */
+a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 4px;
+}
+
+/* Botón Editar */
+a[href*="edi"] {
+    background-color: #2a9930 !important;
+    transition: background-color 0.3s ease;
+}
+a[href*="edi"]:hover {
+    background-color: #27882c !important;
+}
+
+/* Botón Eliminar */
+a[href*="elim"] {
+    background-color: #a13027;
+    transition: background-color 0.3s ease;
+}
+a[href*="elim"]:hover {
+    background-color: #946d6a;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    tbody tr th {
+        padding: 10px;
+        display: block;
+        text-align: left;
+    }
+
+    a {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

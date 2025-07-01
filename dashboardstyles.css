@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(fondo5.jpg);
+    overflow: auto;
+    display: block;
+}
+
+/* Contenedor principal */
+.dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 240px;
+    background-color: #1f2937;
+    color: #d1d5db;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Encabezado de la sidebar */
+.sidebar h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.sidebar h2 {
+    font-size: 14px;
+    color: #86efac;
+    margin-bottom: 10px;
+}
+
+.sidebar h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.sidebar .link {
+    background-color: #384b69;
+    color: rgb(70, 221, 138);
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.sidebar .link:hover {
+    background-color: #0c191f;
+}
+
+/* Área de contenido principal */
+.content {
+    flex-grow: 1;
+    background-image: url("fondo7.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Estilo para la sección activa */
+.section {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.active {
+    display: block;
+}
+
+/* Título del dashboard */
+.h2 {
+    font-size: 42px;
+    color: #0bdb85;
+    text-align: center;
+
+}
+.dashboard h4 {
+        margin: 340px;
+
+}
+
+/* Estilo de tarjetas para accesos rápidos */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 240px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.card p {
+    font-size: 14px;
+    color: #6b7280;
+}
+

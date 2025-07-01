@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url(fondo4.jpg);
+    background-size: cover;
+}
+.bienvenida H1 {
+    margin: 130px;
+}
+.bienvenida{
+   
+   justify-items: center;
+   background-size: cover;
+}
+.bienvenido{
+
+    color: rgb(47, 187, 140);
+    margin: 30px;
+    font-size: 60px;
+}
+.espacio{
+    margin: 200px;
+}
+
+.incio{
+    color: rgb(1, 142, 177);
+    margin: 20px;
+    font-size: 40px;
+}
+.boton2{
+    width: 250px;
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 100px auto;
+    display: block;
+    
+    
+}
+.login{
+    width: 500px;
+    background-color: rgba(15, 20, 24, 0.74);
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: rgb(98, 216, 69);
+    box-shadow: 7px 13px 37px #000;
+}
+.usuario{
+    margin-bottom: 15px;
+    font-size: 15px;
+    width: 100%;
+    padding: 3px;
+}
+.contraseña{
+    margin-bottom: 20px;
+    font-size: 15px;
+    width: 100%;
+    padding: 3px;
+}
+.boton{
+  font-size: 15px;
+    width: 100%;
+    padding: 7px;
+    background-color: black;
+    color: aqua;
+    border: none;
+}
+.etiqueta{
+    font-size: 25px;
+    
+}
+.login h1 {
+    margin-bottom: 15px;
+}
+.nomusu{
+    font-size: 13px;
+    color: aliceblue;
+    margin-bottom: 8px;
+}
+.conusu{
+    font-size: 13px;
+    color: aliceblue;
+    margin-bottom: 8px;
+}
+.editlogin{
+    background-image: url(fondo4.jpg);
+    background-size: cover;
+}
